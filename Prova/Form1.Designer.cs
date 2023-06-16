@@ -37,17 +37,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.A = new System.Windows.Forms.TextBox();
             this.luc = new System.Windows.Forms.TextBox();
             this.ip1 = new System.Windows.Forms.TextBox();
             this.ip2 = new System.Windows.Forms.TextBox();
             this.ip3 = new System.Windows.Forms.TextBox();
             this.v = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.AB = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.vdd = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.LI = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -131,12 +131,12 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "CADASTRO DE PRODUTO";
             // 
-            // textBox1
+            // A
             // 
-            this.textBox1.Location = new System.Drawing.Point(194, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
+            this.A.Location = new System.Drawing.Point(194, 85);
+            this.A.Name = "A";
+            this.A.Size = new System.Drawing.Size(100, 20);
+            this.A.TabIndex = 9;
             // 
             // luc
             // 
@@ -174,19 +174,12 @@
             this.v.TabIndex = 14;
             this.v.TextChanged += new System.EventHandler(this.v_TextChanged);
             // 
-            // textBox7
+            // AB
             // 
-            this.textBox7.Location = new System.Drawing.Point(214, 127);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 15;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(520, 85);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 16;
+            this.AB.Location = new System.Drawing.Point(214, 127);
+            this.AB.Name = "AB";
+            this.AB.Size = new System.Drawing.Size(100, 20);
+            this.AB.TabIndex = 15;
             // 
             // label10
             // 
@@ -202,9 +195,8 @@
             this.vdd.AutoSize = true;
             this.vdd.Location = new System.Drawing.Point(241, 337);
             this.vdd.Name = "vdd";
-            this.vdd.Size = new System.Drawing.Size(41, 13);
+            this.vdd.Size = new System.Drawing.Size(0, 13);
             this.vdd.TabIndex = 18;
-            this.vdd.Text = "label11";
             // 
             // button1
             // 
@@ -216,22 +208,34 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // LI
+            // 
+            this.LI.FormattingEnabled = true;
+            this.LI.Items.AddRange(new object[] {
+            "UN",
+            "LT",
+            "KL"});
+            this.LI.Location = new System.Drawing.Point(520, 85);
+            this.LI.Name = "LI";
+            this.LI.Size = new System.Drawing.Size(140, 21);
+            this.LI.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LI);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.vdd);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.AB);
             this.Controls.Add(this.v);
             this.Controls.Add(this.ip3);
             this.Controls.Add(this.ip2);
             this.Controls.Add(this.ip1);
             this.Controls.Add(this.luc);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.A);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -259,17 +263,17 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox A;
         private System.Windows.Forms.TextBox luc;
         private System.Windows.Forms.TextBox ip1;
         private System.Windows.Forms.TextBox ip2;
         private System.Windows.Forms.TextBox ip3;
         private System.Windows.Forms.TextBox v;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox AB;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label vdd;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox LI;
     }
 }
 

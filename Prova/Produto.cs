@@ -1,6 +1,9 @@
 ﻿using System;
 public class Produto
 {
+    public string codigo;
+    public string descrcao;
+
     public double Verfica(double valor, double imp1, double imp2, double imp3, double lucro)
     {
         double imposto = (((imp1 + imp2 + imp3) / 100.0) * valor);
